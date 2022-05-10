@@ -34,8 +34,12 @@ class _SebhaScreenState extends State<SebhaScreen> {
               child: defaultButton(function: (){
                 setState(() {
                   c++;
+                  if(c >= 0 && c <=33 )
+                  {
+                    text  ="سبحان الله";
+                  }
 
-                  if(c >= 33 && c <=66 )
+                  else if(c >= 33 && c <=66 )
                     {
                       text  ="الحمد لله";
                     }

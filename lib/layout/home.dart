@@ -19,7 +19,9 @@ class HomeScreen extends StatelessWidget {
           child: Column( mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image(image: NetworkImage("https://i.pinimg.com/736x/0a/18/36/0a183664c70f3aec61457977fa1a3487.jpg")),
+              Image(image: NetworkImage("https://i.pinimg.com/736x/0a/18/36/0a183664c70f3aec61457977fa1a3487.jpg"),
+
+              ),
               SizedBox(height: 70.0,),
               defaultButton(function:(){
                 navigateTo(context, DoaaScreen());
@@ -27,7 +29,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 25.0,),
               defaultButton(function:(){
                 navigateTo(context, ZeekrScreen());
-              }, text: "ذكر الله"),
+              }, text: "أذكار"),
               SizedBox(height: 25.0,),
               defaultButton(function:(){
                 navigateTo(context, SebhaScreen());

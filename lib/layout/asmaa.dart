@@ -14,6 +14,7 @@ class AsmaaScreen extends StatelessWidget {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 30.0,
+            color: Colors.white
           )
             ,) ,
             Container(
