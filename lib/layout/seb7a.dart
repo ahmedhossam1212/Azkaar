@@ -19,17 +19,29 @@ class _SebhaScreenState extends State<SebhaScreen> {
         child: Column( mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(child: Text('$text',style:
-              TextStyle(
-                fontSize: 25.0,
-                color: Colors.white
-              ),)),
-            SizedBox(height: 10.0,),
-            Center(child: Text('$c',style: TextStyle(
-              fontSize: 20.0,
-              color: Colors.teal[800],
-            ),)),
-            SizedBox(height: 20,),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(4.0)
+              ),
+              child:Column(
+                children: [
+                  SizedBox(height: 10,),
+                  Center(child: Text('$text',style:
+                  TextStyle(
+                      fontSize: 25.0,
+                      color: Colors.teal[800]
+                  ),)),
+                  SizedBox(height: 10.0,),
+                  Center(child: Text('$c',style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.teal[800],
+                  ),)),
+                  SizedBox(height: 10,)
+                ],
+              ),
+            ),
+            SizedBox(height: 40,),
             Center(
               child: defaultButton(function: (){
                 setState(() {
@@ -54,6 +66,7 @@ class _SebhaScreenState extends State<SebhaScreen> {
                 });
               }, text: "اضغط"),
             ),
+            SizedBox(height: 100,)
           ],
         ),
       ),
