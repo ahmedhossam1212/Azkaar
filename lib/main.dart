@@ -1,7 +1,5 @@
-
 import 'package:azkar/styles/themes.dart';
 import 'package:flutter/material.dart';
-
 import 'layout/home.dart';
 
 void main() {

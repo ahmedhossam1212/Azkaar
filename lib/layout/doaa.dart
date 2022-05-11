@@ -1,4 +1,5 @@
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DoaaScreen extends StatelessWidget {
@@ -19,7 +20,8 @@ class DoaaScreen extends StatelessWidget {
                 TextStyle(
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold
-                ),),
+                ),
+               ),
               SizedBox(height: 10,),
               Center(
                 child: Container( width: double.infinity,
@@ -28,10 +30,10 @@ class DoaaScreen extends StatelessWidget {
                     elevation: 20.0,
                     margin: EdgeInsets.zero,
                     child: Padding(
-                      padding: const EdgeInsets.all(10.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Center(
                         child: Text('اللهم اغفر للمسلمين و المسلمات و المؤمنين و المؤمنات الأحياء منهم و الأموات',style: TextStyle(fontSize: 20.0,color: Colors.teal[900]),
-                        ),
+                        textAlign: TextAlign.end,),
                       ),
                     ),
                   ),
@@ -45,10 +47,10 @@ class DoaaScreen extends StatelessWidget {
                     elevation: 20.0,
                     margin: EdgeInsets.zero,
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Center(
                         child: Text('اللهم ارفع الهم و البلاء عن هذه الأمة و أنصرنا علي القوم الكافرين ',style: TextStyle(fontSize: 20.0,color: Colors.teal[900]),
-                        ),
+                          textAlign: TextAlign.end,  ),
                       ),
                     ),
                   ),
@@ -65,7 +67,7 @@ class DoaaScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(12.0),
                       child: Center(
                         child: Text('اللهم وفق المسلمين و ارفع راية الاسلام عليا يا حي يا قيوم  ',style: TextStyle(fontSize: 20.0,color: Colors.teal[900]),
-                        ),
+                          textAlign: TextAlign.end,  ),
                       ),
                     ),
                   ),
@@ -93,10 +95,10 @@ class DoaaScreen extends StatelessWidget {
                     elevation: 20.0,
                     margin: EdgeInsets.zero,
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Center(
                         child: Text('سبحان الذي سخر لنا هذا وما كنا له مقرنين و انا الي ربنا لمنقلبون',style: TextStyle(fontSize: 20.0,color: Colors.teal[900]),
-                        ),
+                          textAlign: TextAlign.end,  ),
                       ),
                     ),
                   ),
@@ -110,10 +112,10 @@ class DoaaScreen extends StatelessWidget {
                     elevation: 20.0,
                     margin: EdgeInsets.zero,
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Center(
                         child: Text('اللهم انا نسألك في سفرنا هذا البر و التقوي و من العمل ما ترضي',style: TextStyle(fontSize: 20.0,color: Colors.teal[900]),
-                        ),
+                          textAlign: TextAlign.end,  ),
                       ),
                     ),
                   ),
@@ -130,7 +132,7 @@ class DoaaScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(15.0),
                       child: Center(
                         child: Text('اللهم أنت الصاحب في السفر و الخليفه في الأهل',style: TextStyle(fontSize: 20.0,color: Colors.teal[900]),
-                        ),
+                          textAlign: TextAlign.end, ),
                       ),
                     ),
                   ),
@@ -160,7 +162,7 @@ class DoaaScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(12.0),
                       child: Center(
                         child: Text('اللهم اغفر لي و ارحمني و نجني من النار فأنت أرحم الراحمين',style: TextStyle(fontSize: 20.0,color: Colors.teal[900]),
-                        ),
+                          textAlign: TextAlign.end,   ),
                       ),
                     ),
                   ),
@@ -174,10 +176,10 @@ class DoaaScreen extends StatelessWidget {
                     elevation: 20.0,
                     margin: EdgeInsets.zero,
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Center(
                         child: Text('يا حي ياقيوم ارزقي العمل الصالح و وفقني في دروب الحياه',style: TextStyle(fontSize: 20.0,color: Colors.teal[900]),
-                        ),
+                          textAlign: TextAlign.end,  ),
                       ),
                     ),
                   ),
@@ -191,13 +193,10 @@ class DoaaScreen extends StatelessWidget {
                     elevation: 20.0,
                     margin: EdgeInsets.zero,
                     child: Padding(
-                      padding: const EdgeInsets.only(
-                        right: 20,
-                        left: 5
-                      ),
+                      padding: const EdgeInsets.all(16.4),
                       child: Center(
                         child: Text('اللهم اني أسألك راحة لقلبي و فرجا لهمي و تيسيرا لأمري',style: TextStyle(fontSize: 20.0,color: Colors.teal[900]),
-                        ),
+                          textAlign: TextAlign.end, ),
                       ),
                     ),
                   ),

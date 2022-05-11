@@ -1,9 +1,7 @@
-
 import 'package:azkar/componnents/componants.dart';
 import 'package:azkar/layout/seb7a.dart';
 import 'package:azkar/layout/zekr.dart';
 import 'package:flutter/material.dart';
-
 import 'asmaa.dart';
 import 'doaa.dart';
 
@@ -19,10 +17,20 @@ class HomeScreen extends StatelessWidget {
           child: Column( mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image(image: NetworkImage("https://i.pinimg.com/736x/0a/18/36/0a183664c70f3aec61457977fa1a3487.jpg"),
-
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Container( decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                   image: DecorationImage(
+                     image: NetworkImage("https://i.pinimg.com/736x/0a/18/36/0a183664c70f3aec61457977fa1a3487.jpg",),
+                       fit: BoxFit.cover,
+                   ),
+                ),
+                 height: 300,
+                  width: 300,
+                ),
               ),
-              SizedBox(height: 70.0,),
+              SizedBox(height: 50.0,),
               defaultButton(function:(){
                 navigateTo(context, DoaaScreen());
               }, text: "دعاء المسلم"),
