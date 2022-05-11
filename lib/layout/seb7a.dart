@@ -17,8 +17,18 @@ class _SebhaScreenState extends State<SebhaScreen> {
       body: Padding(
         padding: const EdgeInsets.all(30.0),
         child: Column( mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [ Container( decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            image: DecorationImage(
+              image: NetworkImage("https://i.pinimg.com/736x/0a/18/36/0a183664c70f3aec61457977fa1a3487.jpg",),
+              fit: BoxFit.cover,
+            ),
+          ),
+            height: 300,
+            width: 300,
+          ),
+            SizedBox(height: 40,),
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -66,7 +76,7 @@ class _SebhaScreenState extends State<SebhaScreen> {
                 });
               }, text: "اضغط"),
             ),
-            SizedBox(height: 100,)
+
           ],
         ),
       ),
