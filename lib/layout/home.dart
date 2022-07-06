@@ -10,9 +10,10 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(50.0),
+        padding: const EdgeInsets.all(30.0),
         child: Expanded(
           child: Column( mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -26,23 +27,23 @@ class HomeScreen extends StatelessWidget {
                        fit: BoxFit.cover,
                    ),
                 ),
-                 height: 300,
-                  width: 300,
+                 height: 300 ,
+                  width: 300 ,
                 ),
               ),
-              SizedBox(height: 50.0,),
+              SizedBox(height: 45.0,),
               defaultButton(function:(){
                 navigateTo(context, DoaaScreen());
               }, text: "دعاء المسلم"),
-              SizedBox(height: 25.0,),
+              SizedBox(height: 20.0,),
               defaultButton(function:(){
                 navigateTo(context, ZeekrScreen());
               }, text: "أذكار"),
-              SizedBox(height: 25.0,),
+              SizedBox(height: 20.0,),
               defaultButton(function:(){
                 navigateTo(context, SebhaScreen());
               }, text: "سبحة"),
-              SizedBox(height: 25.0,),
+              SizedBox(height: 20.0,),
               defaultButton(function:(){
                 navigateTo(context, AsmaaScreen());
               }, text: "أسماء الله الحسني"),
@@ -52,8 +53,8 @@ class HomeScreen extends StatelessWidget {
               ),),
             
             ]
-
-
+          
+          
           ),
         ),
       ) ,
